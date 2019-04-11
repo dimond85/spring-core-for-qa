@@ -6,7 +6,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestApp {
     public static void main(String[] args) {
-        // change
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-context.xml");
         ReportingService reportingService = (ReportingService) context.getBean("reportingService");
         System.out.println(reportingService.getUsdAmountFor(1L));
